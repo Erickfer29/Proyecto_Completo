@@ -28,8 +28,8 @@ app.engine('.hbs', engine({
 app.set('view engine', '.hbs');
 /* ------------------------------- Middlewares ------------------------------ */
 
-app.set(morgan('dev'));
-app.set(express.urlencoded({extended: false}));
+app.use(morgan('dev'));
+app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 /* --------------------------------- routes --------------------------------- */
