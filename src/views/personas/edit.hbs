@@ -30,7 +30,13 @@
 
                         <div class="input-group mt-2">
                             <input class="form-control" type="file" name="file" id="file">
+                        </div>
+
+                        {{#if persona.imagen}}
+                            <div class="input-group mt-2">
+                                <img src="/uploads/{{persona.imagen}}" class="card-img-top mx-auto m-2 rounded-circle" style="width: 150px; height: 150px;display:block;">
                             </div>
+                        {{/if}}
 
                         <div class="form-group mt-4 d-grid gap-2">
                             <button class="btn btn-success"> Actualizar </button>
